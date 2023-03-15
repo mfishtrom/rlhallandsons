@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imperfect Productions</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="wrapper">
+
+  <header class="box header">
+    <div class="nav">
+      <a href="index.html" class="home"><img src="images/imperfectlogo.svg" height="100"></a>
+
+    </div>
+
+  </header>
+
+
+  <main class="box middle">
+    <div>
+
+      <p class="description">
+        Hi, I'm Steve. I like long walks on the beach.
+      </p>
+
+      <div class="dropdown">
+        <button class="dropbtn">Contact</button>
+        <nav class="dropdown-content">
+          <a href="mailto:hallsm625@gmail.com">Email</a>
+          <a href="tel:+16502964990">Call</a>
+          <a href="https://www.instagram.com/smhall625/">Instagram</a>
+        </nav>
+      </div>
+
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+      </script>
+
+  </main>
+
+  <footer class="box footer">
+
+    <h3>Copyright 2023</h3>
+  </footer>
+
+  <div id="root"></div>
+  <script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>
