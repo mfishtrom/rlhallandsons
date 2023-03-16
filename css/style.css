@@ -274,7 +274,8 @@ a.link {
 
 @media only screen and (min-width: 600px) {
   .aboutus{
-    padding-left: 100px;
-    padding-right: 100px;
+    max-width: 60ch;
+    margin: auto;
+    padding-bottom: 10px;
   }
 }
