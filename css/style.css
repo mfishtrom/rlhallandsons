@@ -50,7 +50,7 @@ hr {
   margin-bottom: 10px;
 }
 
-h3{
+h3 {
   font-size: 12px;
 }
 
@@ -76,7 +76,7 @@ h3{
   position: absolute;
   background-color: #f1f1f1;
   min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -89,13 +89,19 @@ h3{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #2A6F97;}
+.dropdown:hover .dropbtn {
+  background-color: #2A6F97;
+}
 
 /* link */
 a:link {
@@ -142,7 +148,8 @@ a:visited {
 }
 
 .collapsible {
-  background-color: #444;;
+  background-color: #444;
+  ;
   color: white;
   cursor: pointer;
   padding: 25px;
@@ -188,15 +195,20 @@ a.link {
 
 .footer {
   grid-area: footer;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .wrapper {
   background-color: #fff;
   color: #444;
   grid-template-areas:
-   "header"
-   "middle"
-   "footer"
+    "header"
+    "middle"
+    "footer"
 }
 
 .box {
@@ -235,27 +247,34 @@ a.link {
   padding: 10px;
 }
 
-.description{
+.description {
   color: black;
 }
-.carousel-inner > .item > img{ margin:auto; }
-.aboutbtn{
+
+.carousel-inner>.item>img {
+  margin: auto;
+}
+
+.aboutbtn {
   padding: 10px;
   margin: 10px;
 }
+
+
 
 @media only screen and (max-width: 600px) {
   .logo {
     width: 300px;
   }
 
-  .summary{
+  .summary {
     font-size: 16px;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .description{
-    min-width: 250px;
+  .aboutus{
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
